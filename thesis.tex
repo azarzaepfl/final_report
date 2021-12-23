@@ -10,12 +10,12 @@
 %   http://www.latex-project.org/lppl.txt
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper,11pt,oneside]{report}
+\documentclass[a4paper,12pt,oneside]{report}
 % Options: MScThesis, BScThesis, MScProject, BScProject
 \usepackage[BScThesis]{EPFLreport}
 \usepackage{xspace}
 
-\title{Biased AI Systems\\ \textit{About the reinforcement of injust discrimination.} }
+\title{Ethical and Legal Challenges of Artificial Intelligence \\ System in the Health Care Industry }
 \author{André Ramon Zarza Tapia \\ SCIPER : 296552}
 
 
@@ -25,7 +25,13 @@
 \maketitle
 
 \begin{abstract}
-The 
+The health care industry is one that is constantly striving towards innovation and technological advancement in order to better diagnose and treat patients. A prominent and promising technology being used more and more in the industry is that of artificial intelligence-driven systems.  It is currently being used for diagnosis processes, treatment protocol development, drug development, personalised medicine, and patient monitoring and care all with the help of smart devices capable of collecting vasts amounts of data and prior data collected into datasets throughout the years. Therefore, the use of these technologies in clinical practices has huge potential to transform it for the better, but it also raises ethical challenges. 
+
+\medskip
+
+This paper will take a closer look at some of the ethical and legal challenges posed by the introduction of artificial intelligence driven-systems in the health care industry. The ethical challenges discussed will be (1) data privacy (2) algorithmic fairness and biases and (3) safety and transparency data privacy. The legal challenges discussed will be (1) liability (2) safety and effectiveness and (3) data protection and privacy. As well as discussing these an attempt to evaluate these challenges and potential solutions will be mentioned.
+
+
 \end{abstract}
 
 
@@ -35,88 +41,52 @@ The
 \chapter{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%
 
-The introduction is a longer writeup that gently eases the reader into your
-thesis~\cite{dinesh20oakland}. Use the first paragraph to discuss the setting.
-In the second paragraph you can introduce the main challenge that you see.
-The third paragraph lists why related work is insufficient.
-The fourth and fifth paragraphs discuss your approach and why it is needed.
-The sixth paragraph will introduce your thesis statement. Think how you can
-distill the essence of your thesis into a single sentence.
-The seventh paragraph will highlight some of your results
-The eights paragraph discusses your core contribution.
+Technology in the medicine world of today is indispensable. Health care workers rely it on a daily basis to track their patient's well being, be able to accurately give a diagnosis, detect diseases or otherwise imperceptible illnesses and be capable of treating them. These needs have pushed the innovation in the industry of health care technologies to great extent leading to the creating of highly intricate and complex systems that require vasts amounts of data in order to learn and better itself to more accurately understand whatever it is that it is trying to achieve. For a couple decades data-driven, self-learning systems have been referred to as artificial intelligence-driven systems. However, the understanding of these technologies varies widely depending on the context in which it is deployed. For technologies in the health care industry artificial intelligence driven system can be defines as machine-learning algorithms and software to mimic human cognition in the analysis, presentation, and comprehension of complex medical and health care data.
 
-This section is usually 3-5 pages.
+It is only in the more recent years that these AI-driven systems have become of vast importance as the relevance given to data collecting and analysis has exponentially grown. About 90\% of the world's data has been collected in last 2 years and every day engineering are finding more clever ways to extract and collect this data. In the health care context the popularity of smart watches has given ground to a plethora of ways in which data can be collected as well as the use of patient's medical records in a mayor database to cross correlate information and identify illness or a correct diagnosis. These system gave rise, like in many other industries to ethical question as well as legal question on the legitimacy of their practices. Due to the fast-pace growth of the technologies it was a challenge to keep up on regulations and ethical limitations hence giving place to ethical and legal questions about the current practices and future of such systems. 
 
 %%%%%%%%%%%%%%%%%%%%
-\chapter{Background}
+\chapter{Ethical and Legal Challenges}
 %%%%%%%%%%%%%%%%%%%%
 
-The background section introduces the necessary background to understand your
-work. This is not necessarily related work but technologies and dependencies
-that must be resolved to understand your design and implementation.
+The use of artificial intelligence driven systems and their collection of data is one that arises multiple ethical and legal challenges. From the ethical stand point that mass collection of data is one that violets patient's privacy to the issues arising from systematic inequalities represented in the data. Health industry workers and engineerings alike posses a moral duty to give the patients the fairest and most equal treatment possible. Therefore this chapter focuses on various ethical challenges the health care industry faces. From a legal standpoint one must be capable of determining a line of liability for which doctors are responsible of treatment decisions made by intelligent systems.
 
-This section is usually 3-5 pages.
+\section{Data Privacy}
 
+All data collection and storage is now digital, our lives are increasingly digital, most digital data is connected to a single Internet, and there is more and more sensor technology in use that generates data about non-digital aspects of our lives \cite{1}. The mass collection of data allows for companies to distribute and use data in various ways which can sometimes be seen as a breach in the data privacy of the users' whose data this belongs to. A prominent data breach was that created by the Royal Free NHS Foundation Trust who was ruled in a breach of the UK Data Protection Act. The Royal Free NHS Foundation Trust provided Google DeepMind with circa 1.6 million patient's personal data for a safety clinical testings app that aimed to help with the detection and diagnosis of acute kidney injury. The ethical challenge posed by such data breaches is that of imposing a lack of trust by patients on their doctors due to a lack of privacy in their data. But what about ownership? Users data is highly valuable in the world of today and thus it is highly sought after. However, the public feels uncomfortable with their data points being sold for profit by government or companies. Hence, companies aiming to use data must show that the data are adding value to the health of the very same patients whose data is being used.
 
-%%%%%%%%%%%%%%%%
-\chapter{Design}
-%%%%%%%%%%%%%%%%
+ Another issues posed by the question of what is collected as data. There is and imperative need to protect against the use of data that occurs beyond the doctor-patient relation. The mishandling of trust can deleteriously affect patients as it could create a massive increase in insurance premiums, job opportunities or even the personal lives of users. Therefore, the question is asked as to whether the deletion of patient data could be deleted under a request by the patient?
+ 
+ \section{Algorithmic Fairness and Bias}
+ 
+Race, gender or geographic features in medical AI along with a majority of AI using data representative of different groups can lead to biased algorithm created by systemic inequalities. In the medical industry where these technologies are oh high demand and more importantly of high relevance to the capabilities of being able to correctly diagnose it is important that all groups be represented. For instance, algorithms trained with gender or race imbalances in the data have proven to do worse for the tasks such as chest x-rays as well for being able to detect skin-cancer on people of dark skin. The use of these technologies in this industry can have great consequences in the case of incorrect decisions. 
 
-Introduce and discuss the design decisions that you made during this project.
-Highlight why individual decisions are important and/or necessary. Discuss
-how the design fits together.
+The mayor reason for the lack of representation of marginalised groups can be boiled down to systematic inequalities. Just like Darwin and Hunt, many scientists today perpetuate the view that there is an inherent difference between the abilities of various races and sexes \cite{2}. One of the key challenges regarding the ethics behind the misrepresentation of marginalised groups is that of cultural relativism which maintain that morality is grounded in the approval of one's society - and not simply in the preferences of individual people \cite{3}. 
+When there is a grappling struggle with systematic bias in a societal institutions like in the health industry, one need not the exacerbate them but reduce potential Al health disparities causes by AI-driven systems. Therefore, medical data should be more commonplace for the sanctity of medical data and the strength of relevant privacy. Though there exists a clear necessity in the health care industry for unbiased systems as it has proven to have mayor repercussions, it is an ethical challenge that stretches far beyond the scope of this industry. 
 
-This section is usually 5-10 pages.
+\section{Safety and Transparency}
 
+One of the biggest challenges for artificial intelligence driven systems in healthcare is that of safety. For instance the well-known IBM Watson for Oncology system uses AI algorithms to help physicians explore cancer treatment options for their patients. Yet it has been subject to mayor scrutiny after reportedly giving erroneous and unsafe cancer treatment recommendations. The mayor explanation for this would be that of the training that the systems uses. The ethicality burden is one that falls onto the doctor as regardless of the sophistication of the recommendation systems for specific treatments it is still a matter of personal judgement to deem if the treatment is correct. In a recent study an AI system was paired against a group of doctors in the task of identifying potential for breast cancer by scanning the x-rays and personal records of the patient. This resulted in the AI system more accurately determining which cases were prone to or had breast cancer as well as doing it in a quicker manner in comparison to a group of specialised doctors. However, as shown two very similar cases for the same technology prove to be challenging in determining if the technology is to be trusted or not. Therefore the ethical challenge for safety in the use of AI systems in healthcare is one that is comprehensible and understandable. It requires as well for there to be an availability for systems to share data and have a transparency between systems as well as with humans to understand what it is that is going on. But even when the will to share data exists, lack of interoperability between medical records systems remains a formidable technical barrier \cite{6}. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Implementation}
-%%%%%%%%%%%%%%%%%%%%%%%%
+Another ethical challenge is that of transparency as to which data is being used to train these systems and models. This would create trust among stakeholders particularly in the context of healthcare between patients and doctors. It would also ensure a comprehension of the data that is being served to ensure that good data is being fed to the system. As the slogan follow "garbage in, garbage out" which in the case of biased AI systems results in the creation of a biased recommendation or prediction task. That's why engineering are face with the task of properly selecting data as well as to  which part of data to use to achieve their gold in their systems. AI engineers do not look for any sort of data, they look for data which allows the fulfilling of their objectives \cite{4}.  As well as ensuring objectiveness in data and relevance, artificial intelligence engineers must ensure transparency in the way that data is being processed. The algorithms used in the systems and models must allow for patients and doctors to understand what is happening with their data. Yet this issue is one that pursues in all industries as the concept of the "black box" that is an artificial intelligence driven system is one that is complex and relatively new. This is why the ethical issue of understanding what is happening under the hood and seeing why problems such are erroneous treatment suggestions arise is one that persists and is tough to deal with.
 
-The implementation covers some of the implementation details of your project.
-This is not intended to be a low level description of every line of code that
-you wrote but covers the implementation aspects of the projects.
+\section{Liability}
 
-This section is usually 3-5 pages.
+A legal challenge posed by the use of AI driven systems in healthcare is that of placing liability. As discussed above, there exists plenty of ethical challenges regarding the decision making power that these models or systems can have in determining the appropriate or optimal in proceeding with treatments. Hence it is relevant and prudent to question in instances of error erroneous treatment suggestion who the liability for a patient's health falls onto. Should doctors be 100\% reliant on intelligent systems and have no voice in such matters or should they mediate all predictions and results given by the model?. 
 
-
-%%%%%%%%%%%%%%%%%%%%
-\chapter{Evaluation}
-%%%%%%%%%%%%%%%%%%%%
-
-In the evaluation you convince the reader that your design works as intended.
-Describe the evaluation setup, the designed experiments, and how the
-experiments showcase the individual points you want to prove.
-
-This section is usually 5-10 pages.
-
-
-%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Related Work}
-%%%%%%%%%%%%%%%%%%%%%%
-
-The related work section covers closely related work. Here you can highlight
-the related work, how it solved the problem, and why it solved a different
-problem. Do not play down the importance of related work, all of these
-systems have been published and evaluated! Say what is different and how
-you overcome some of the weaknesses of related work by discussing the 
-trade-offs. Stay positive!
-
-This section is usually 3-5 pages.
+Healthcare workers have a duty to provide their patients with the upmost professionalism, care and standard that is expected of them. Yet, when it comes to them being reliable on black box tools such as that of artificial intelligence the clinicians are in a state of limbo due to the black box tool characteristic that machine learning and artificial intelligence have. That's why some have proposed product liability against the makers of the black box that is the artificial intelligence system. But this has problem to be difficult in the court of law. The consideration whether an autonomously functioning artificial intelligent entity or robot must have a certain legal subjectivity or not, will be dependent upon social and economic necessities and not least of all, the cultural social and legal acceptance by other actor \cite{5}. As explained in the text there is an ominous us need for society to impose a form of legal personality for autonomous and artificially intelligent entities. The need to determine what kind of liability is bestowed upon clinicians who in the age of today are not able to distinguish their treatment capabilities from decisions given by intelligent system is one that is imperative to the innovation and development of the technological frontier that is medical care. 
 
 
 %%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusion}
 %%%%%%%%%%%%%%%%%%%%
 
-In the conclusion you repeat the main result and finalize the discussion of
-your project. Mention the core results and why as well as how your system
-advances the status quo.
+The age of today is not one to stop pushing boundaries of technology. It has become second nature for us to look into the world of technology to facilitate our lives, help us better understand the world and be able to all in all enrich the world we live in today. Coupled with the rapid appearance of vasts amounts of data, artificially intelligent systems are and undeniable certainty that we rely on daily to forgo with our lives. More and more industries are rapidly adopting these technologies as seen with the world of medical care where they have become vital in properly and more rapidly being able to treat patients. However these are not without their downsides. The use of them have lead to many ethical questions as seen above with the issues of biases, transparency and data privacy which even though relevant and prone to creation of distrust between users and doctors are not easy to handle with. The ubiquitous use of data today poses dilemmas which doctors must face day after day but law makers must to. The ugly truth that a mayor issue arises caused by the representation of systematic inequalities that are represented in data are some that can be seen in all industries. However, these go back centuries and now they are impacting the quality of treatment that can be provided to people of colour by a system that tries to remove biases and unjust discrimination, it is ever more important to define a set of laws and look into the legitimacy of the black box design AI driven systems have. These black box designs also create an issue in the context of liability as it is tough to determine who it should fall on. Are we to blame engineers for using available datasets that misrepresented groups in their quest to better the quality and equality of treatment being offered in the health care system? Are we to blame the social structures for how data is being misrepresented or are we to blame law makers who have allowed for collection of data to not only give an erroneous treatment but to create constant privacy breaches into all our lives? The questions are some that will continue to have great relevance as the fields of AI advances and the use and reliance of it, is. Nevertheless, without good there is no evil and it must be undeniable that the leap that these systems have given to the healthcare industry are far more important and relevant than the cons of it. That's why healthcare will continue to be a frontier for technological development and an integral player in our understanding of artificial intelligence systems and how to deal with the ethicality and legality of them.
+
 
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{Bibliography}
-\printbibliography
 
 % Appendices are optional
 % \appendix
@@ -132,5 +102,23 @@ advances the status quo.
 % \item Crayons
 % \item A self-aware 5-year old
 % \end{itemize}
+
+\begin{thebibliography}{100} % 100 is a random guess of the total number of %references
+
+\bibitem{1} ``Ethics of Artificial Intelligence and Robotics" \emph{Standford Encyclopedia of Philosophy}, pp.1-33 , June 2020.
+
+\bibitem{2} Race and Gender \emph{The Oxford Handbook of Ethics and AI}, Markus D. Dubber, Frank Pasquale, and Sunit Das
+MA, 2020.
+
+\bibitem{3} Ethics, Metaphysical Issues :Objectivism and Relativism \emph{Internet Encyclopedia of Philosophy}, A Peer-Reviewed Academic Resource, 1999.
+
+\bibitem{4} Getting into the engine room: a blueprint to investigate the shadowy steps of AI ethics \emph{AI \& SOCIETY},  2021.
+
+\bibitem{5} Do We Need New Legal Personhood in the Age of Robots and AI? \emph{Robotlaw},  2018.
+
+\bibitem{6} Health Care AI Systems Are Biased \emph{},  Amit Kaushal, Russ Altman, Curt Langlotz, November 2017.
+
+
+\end{thebibliography}
 
 \end{document}
